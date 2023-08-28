@@ -23,4 +23,4 @@ then
 Initial key-values ---> CMD ["npm","run",dev"]
 Change it to ---> CMD ["npm","run","preview"]
 
-then in cmd run sudo docker compose up
+then in cmd run sudo docker compose up# mentorStudent_assingment
