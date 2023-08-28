@@ -5,8 +5,6 @@ services:
     build: ./client
     ports:
       - 3000:3000
-    volumes:
-      - ./client:/app
     networks:
       - mentorstudent
     depends_on:
@@ -16,8 +14,6 @@ services:
     build: ./server
     ports:
       - 4000:4000
-    volumes:
-      - ./server:/app
     networks:
       - mentorstudent
     depends_on:
