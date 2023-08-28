@@ -1,0 +1,25 @@
+.input_wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+    .label{
+        font-size: medium;
+        @media screen and (min-width:550px) {
+            font-size: large;
+        }
+    }
+    .input{
+        width:280px;
+        height:42px;
+        font-size: small;
+        border-radius: 8px;
+        border:2px solid black;
+        outline: none;
+        @media screen and (min-width:550px) {
+            font-size: large;
+            padding:8px 18px;
+            width: 440px;
+        }
+    }
+}

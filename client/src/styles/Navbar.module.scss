@@ -1,0 +1,44 @@
+.navBar{
+    max-width: 100%;
+    padding:0.5rem 2.5rem;
+    display:flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    background-color: white;
+    .right_section{
+        display:none;
+        @media screen and (min-width:950px){
+            display:block;
+            height:fit-content;
+        }
+        .items{
+            display:flex;
+            list-style: none;
+            gap:2rem;
+            align-items: center;
+            font-size: larger;
+            .userName{
+                font-weight: 400;
+                border-radius: 2rem;
+                border:1px solid gray;
+                box-shadow: 4px 4px 6px gray;
+                cursor: pointer;
+                padding:0.5rem 1rem;
+            }
+            .container{
+                position: relative;
+                height: fit-content;
+                transition: 2s ease-in-out;
+                .email{
+                    background-color: transparentize($color: #000000, $amount: 0.4);
+                    padding:0.5rem 1rem;
+                    border-radius: 2rem;
+                    color:white;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
